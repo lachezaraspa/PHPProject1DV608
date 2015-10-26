@@ -37,11 +37,7 @@ class MasterController {
         $this->taskView = $taskView;
         $this->layoutView = $layoutView;
 
-<<<<<<< HEAD
         $this->conn = new mysqli("sql103.byethost31.com", "b31_16789578", "46m9vcjz", "b31_16789578_project");              
-=======
-        $this->conn = new mysqli("https://php-lachoproject.rhcloud.com/phpmyadmin/", "admin3Y6SEUA@127.9.160.2", "Gxsp4GyyNb7B", "php");        
->>>>>>> origin/master
         //$this->conn = new mysqli("localhost", "root", "root", "userdb");
 
         // Check connection
