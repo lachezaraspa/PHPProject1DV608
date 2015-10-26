@@ -167,7 +167,7 @@ class TaskView {
                                         <p>' . $this->message . '</p>
                                             
 					<label for="' . self::$taskBody . '">Task description :<br><small>Max 500 characters.</small></label><br>
-					<textarea id = "' . self::$taskBody . '" name="' . self::$taskBody . '" ROWS=4 COLS=30 >' . $this->body . '</textarea>
+					<textarea id = "taskBody2" name="' . self::$taskBody . '" ROWS=4 COLS=30 >' . $this->body . '</textarea>
                                         <br>   
 					<label for="' . self::$taskDueDate . '">To be completed :</label>
 					<input type="date" id="' . self::$taskDueDate . '" name="' . self::$taskDueDate . '" value = ' . $this->date . ' />
