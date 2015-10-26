@@ -1,0 +1,40 @@
+
+body {
+    font-family: Tahoma, sans-serif;
+    color:  graytext ;
+    background-color: #FFFFF5}
+ h1 {
+    margin: auto;
+    width: 60%;
+    border:3px groove lightslategray ;
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px;
+    font-family: Tahoma, sans-serif }
+
+
+ #taskBody{ 
+        width: 500px;
+	height: 120px;
+	border:2px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-color: appworkspace;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+ #ul{
+    
+    background-color: #FFFFFF;
+    border: 1px solid lightslategray;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 10px 10px 25px;
+} 
+
+#li {
+  word-wrap: break-word;
+  padding: 4px 0;
+
+  
+  
+}
