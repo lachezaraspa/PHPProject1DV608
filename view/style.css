@@ -23,6 +23,17 @@ body {
 	background-repeat: no-repeat;
 }
 
+#taskBody2{ 
+        width: 500px;
+	height: 120px;
+	border:2px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-color: appworkspace;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
  #ul{
     
     background-color: #FFFFFF;
