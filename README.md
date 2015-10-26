@@ -32,4 +32,6 @@
 ###Instalation:  
   * Upload files to server that supports PHP 5.4 or later
   * Create a databes using the userdb.sql script
-  * Modify
+  * Provide connection and credentials information for the database by modifying the MasterController.php file
+  * Modify the field $db to match the database name
+  
