@@ -33,5 +33,5 @@
   * Upload files to server that supports PHP 5.4 or later
   * Create a databes using the userdb.sql script
   * Provide connection and credentials information for the database by modifying the MasterController.php file
-  * Modify the field $db to match the database name
+  * Modify the field $db in UserDAL.php and TaskDAL.php to match the database name
   
