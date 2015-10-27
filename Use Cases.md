@@ -83,5 +83,12 @@ Author: Lachezar Asparuhov
   3. User choose a task to delete.
   4. System deletes the task from the user records.
 
-    
+##Use Case 6: User logs out
+
+###Main Scenario
+ 
+  1. Starts when a user is loged in and wants to log out.
+  2. The system present a logout choice.
+  3. User tells the system he/she wants to log out.
+  4. System logs the user out.
  
