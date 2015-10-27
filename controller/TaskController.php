@@ -47,9 +47,9 @@ class TaskController {
             try {
                 
                 if ($tDAL->createTask($_SESSION['usernameLoged'], $this->tv->getTaskBoby(), $this->tv->getDueDate(), $this->dtv->returnDate(), $this->tv->getCheckBox())){
-                    $_SESSION['notice'] = 'Task successfully created.';
+                    $_SESSION['notice'] = 'Task successfully created.'; //show messages
                    
-                    $this->tv->refresh();
+                    $this->tv->refresh();//refresh page
 
                     
                 }else{
@@ -59,11 +59,13 @@ class TaskController {
                 echo $e;
             }
         }
-
+        
+        //When the delete task button is pressed
         if ($this->tv->deletePressed()) {
             try {
                 $tDAL->deleteTask($this->tv->getDeleteID());
-                $this->tv->refresh();
+                $_SESSION['notice'] = 'Task deleted.';
+                $this->tv->refresh(); //refresh page
             } catch (Exception $e) {
                 echo $e;
             }
@@ -72,6 +74,7 @@ class TaskController {
         //When the user wants to view the edit form
         if ($this->tv->editPressed()) {
             try {
+                //Populate the input fields
                 $editTask = $tDAL->getTaskFromID($this->tv->getEditID());
                 $this->tv->populateBody($editTask->getBody());
                 $this->tv->populateDate($editTask->getDueDate());
