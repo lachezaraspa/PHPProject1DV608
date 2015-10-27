@@ -98,3 +98,16 @@ The user is viewing the register page.
 * The text "Register new user", is shown.
 * Error message: “Password do not match” is shown
 * A form for registration is shown
+
+##Test case 2.4: Failed to register with not valid email
+The user is viewing the register page.
+
+###Input:
+* All fields are filed in and password and repassword are not matching; Example: "PASSWORD" and "password"
+* Press "Register" button
+
+###Output:
+* The text "Not logged in", is shown.
+* The text "Register new user", is shown.
+* Error message: “Password do not match” is shown
+* A form for registration is shown
