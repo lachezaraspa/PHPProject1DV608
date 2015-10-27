@@ -43,7 +43,7 @@ class LoginView {
             $this->message = "Password is missing";
         } elseif ($this->loginFail === true) {
             $this->message = "Wrong name or password";
-        } elseif ($this->logoutSuccess === true && $this->isLogOutPressed()) {
+        } elseif ($this->logoutSuccess === true) {
             $this->message = "Bye bye!";
         }
         
