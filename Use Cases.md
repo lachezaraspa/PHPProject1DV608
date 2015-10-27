@@ -5,7 +5,7 @@ Author: Lachezar Asparuhov
 
 ##Use Case 1: Loging in 
 
- ###Main Scenario
+###Main Scenario
  
   1. Starts when a user wants to authenticate.
   2. System asks for username, password
@@ -19,7 +19,7 @@ Author: Lachezar Asparuhov
 
 ##Use Case 2: Registering new user
 
- ###Main Scenario
+###Main Scenario
  
   1. Starts when a user wants to register.
   2. System asks for username, password, repeat password and email.
