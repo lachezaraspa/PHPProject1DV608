@@ -62,7 +62,7 @@ class RegisterView {
                 $this->message .= "Password has too few characters, at least 6 characters<br>";
             }elseif ($this->getPass() != $this->getRePass()) {
                 $this->message .= "Password do not match<br>";
-            }elseif(strlen($this->getEmail())<4){
+            }elseif(strlen($this->getEmail())<4 || strpos($this->getEmail, '@') === FALSE){
                 $this->message .= "Not valid email.<br>";
             }else{
                 $this->message .= "User exists, pick another username."; 
