@@ -25,9 +25,9 @@
 
 ###The application can be seen at: http://lachoproject.byethost31.com/
 
-###Use cases at:
+###Use cases at: https://github.com/lachezaraspa/PHPProject1DV608/blob/master/Use%20Cases.md
 
-###Test cases at:
+###Test cases at: 
 
 ###Instalation:  
   * Upload files to server that supports PHP 5.4 or later
