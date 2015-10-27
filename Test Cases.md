@@ -59,6 +59,18 @@ Author: Lachezar Asparuhov
 * Error message: “Wrong name or password” is shown
 * A form for registration is shown
 
+##Test case 1.6: Login successful
+
+###Input:
+* Provide correct username and password
+* Press "Login" button
+
+###Output:
+* The text "Logged in as 'Username'", is shown.
+* The link "Create new task", is shown.
+* Message: “Welcome, 'Username'” is shown
+* A list of tasks is shown
+
 ##Test case 2.1: Failed to register with missing username
 The user is viewing the register page
 
@@ -67,6 +79,7 @@ The user is viewing the register page
 * Press "Register" button
 
 ###Output:
+* The link "Back to login", is shown.
 * The text "Not logged in", is shown.
 * The text "Register new user", is shown.
 * Error message: “Username has too few characters, at least 3 characters.” is shown
@@ -80,6 +93,7 @@ The user is viewing the register page. A user with username: "User" exists in th
 * Press "Register" button
 
 ###Output:
+* The link "Back to login", is shown.
 * The text "Not logged in", is shown.
 * The text "Register new user", is shown.
 * Error message: “User exists, pick another username.” is shown
@@ -94,6 +108,7 @@ The user is viewing the register page.
 * Press "Register" button
 
 ###Output:
+* The link "Back to login", is shown.
 * The text "Not logged in", is shown.
 * The text "Register new user", is shown.
 * Error message: “Password do not match” is shown
@@ -108,6 +123,7 @@ The user is viewing the register page.
 * Press "Register" button
 
 ###Output:
+* The link "Back to login", is shown.
 * The text "Not logged in", is shown.
 * The text "Register new user", is shown.
 * Error message: “Not valid email.” is shown
