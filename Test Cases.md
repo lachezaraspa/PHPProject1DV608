@@ -142,7 +142,7 @@ The user is loged in and is viewing the form for creating tasks.
 The user is loged in and is viewing the form for creating tasks.
 
 ###Input:
-* No date or passed date and time is given
+* No date or passed date and time are given
 * Press "Create" button
 
 ###Output:
@@ -192,11 +192,12 @@ The old description of the task is in the text box, and the old date and time ar
 * Error message: "Task cannot be empty! Please fill in some text." is shown.
 * A form for creating task is shown
 
-##Test case 3.2: Failed to create task without giving valid date
+##Test case 4.2: Failed to edit task without giving valid date
 The user is loged in and is viewing the form for creating tasks.
+The old description of the task is in the text box, and the old date and time are filled in as well.
 
 ###Input:
-* No date or passed date and time is given
+* No date or passed date and time are given
 * Press "Create" button
 
 ###Output:
@@ -205,8 +206,9 @@ The user is loged in and is viewing the form for creating tasks.
 * Error message: "Please set a valid date for the task." is shown.
 * A form for creating task is shown
 
-##Test case 3.3: Failed to create task with too long task description 
+##Test case 4.3: Failed to edit task with too long task description 
 The user is loged in and is viewing the form for creating tasks.
+The old description of the task is in the text box, and the old date and time are filled in as well.
 
 ###Input:
 * Task description is having more than 500 characters
@@ -218,8 +220,9 @@ The user is loged in and is viewing the form for creating tasks.
 * Error message: "Task description is too long. Currently:N of chars" is shown.
 * A form for creating task is shown
 
-##Test case 3.4: Successful task creation
+##Test case 4.4: Successfuly edited task
 The user is loged in and is viewing the form for creating tasks.
+The old description of the task is in the text box, and the old date and time are filled in as well.
 
 ###Input:
 * Task description is having less than 500 characters, it is not empty and the date and time are valid
@@ -228,6 +231,6 @@ The user is loged in and is viewing the form for creating tasks.
 ###Output:
 * The text "Loged in as 'Username'", is shown.
 * The link "Create new task", is shown.
-* Message: "Task successfully created." is shown.
+* Message: "Task successfully edited." is shown.
 * A list of tasks is shown.
-* The new task is shown at the bottom.
+
