@@ -12,7 +12,7 @@ class RegisterModel {
     
     public function register($name, $pass, $repass, $email, UserDAL $users){
         
-        if(strlen($name) >= 3 && strlen($pass) >= 6 && strlen($repass)>= 6 && strlen($email)>= 4){
+        if(strlen($name) >= 3 && strlen($pass) >= 6 && strlen($repass)>= 6 && strlen($email)>= 4 && strpos($email, '@') !==  false){
             
             $hashedPass = crypt($pass, $name);
             $hashedRePass = crypt($repass, $name);
