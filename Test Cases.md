@@ -103,11 +103,131 @@ The user is viewing the register page.
 The user is viewing the register page.
 
 ###Input:
-* All fields are filed in and password and repassword are not matching; Example: "PASSWORD" and "password"
+* All fields are filed in correctly except email
+* Email is shorter than 4 characters or does not contain '@'; Example: "@.e" and "email"
 * Press "Register" button
 
 ###Output:
 * The text "Not logged in", is shown.
 * The text "Register new user", is shown.
-* Error message: “Password do not match” is shown
+* Error message: “Not valid email.” is shown
 * A form for registration is shown
+
+##Test case 2.5: Registration is successful
+The user is viewing the register page.
+
+###Input:
+* All fields are filed in correctly
+* Press "Register" button
+
+###Output:
+* A form for login is shown
+* The text "Not logged in", is shown.
+* The text "Registered new user.", is shown.
+
+##Test case 3.1: Failed to create task without having task description
+The user is loged in and is viewing the form for creating tasks.
+
+###Input:
+* No task description is given
+* Press "Create" button
+
+###Output:
+* The text "Loged in as 'Username'", is shown.
+* The link "Back to tasks", is shown.
+* Error message: "Task cannot be empty! Please fill in some text." is shown.
+* A form for creating task is shown
+
+##Test case 3.2: Failed to create task without giving valid date
+The user is loged in and is viewing the form for creating tasks.
+
+###Input:
+* No date or passed date and time is given
+* Press "Create" button
+
+###Output:
+* The text "Loged in as 'Username'", is shown.
+* The link "Back to tasks", is shown.
+* Error message: "Please set a valid date for the task." is shown.
+* A form for creating task is shown
+
+##Test case 3.3: Failed to create task with too long task description 
+The user is loged in and is viewing the form for creating tasks.
+
+###Input:
+* Task description is having more than 500 characters
+* Press "Create" button
+
+###Output:
+* The text "Loged in as 'Username'", is shown.
+* The link "Back to tasks", is shown.
+* Error message: "Task description is too long. Currently:N of chars" is shown.
+* A form for creating task is shown
+
+##Test case 3.4: Successful task creation
+The user is loged in and is viewing the form for creating tasks.
+
+###Input:
+* Task description is having less than 500 characters, it is not empty and the date and time are valid
+* Press "Create" button
+
+###Output:
+* The text "Loged in as 'Username'", is shown.
+* The link "Create new task", is shown.
+* Message: "Task successfully created." is shown.
+* A list of tasks is shown.
+* The new task is shown at the bottom.
+
+##Test case 4.1: Failed to edit task without having task description
+The user is loged in and is viewing the form for creating tasks. 
+The old description of the task is in the text box, and the old date and time are filled in as well.
+
+###Input:
+* The old text of the task is erased
+* Press "Create" button
+
+###Output:
+* The text "Loged in as 'Username'", is shown.
+* The link "Back to tasks", is shown.
+* Error message: "Task cannot be empty! Please fill in some text." is shown.
+* A form for creating task is shown
+
+##Test case 3.2: Failed to create task without giving valid date
+The user is loged in and is viewing the form for creating tasks.
+
+###Input:
+* No date or passed date and time is given
+* Press "Create" button
+
+###Output:
+* The text "Loged in as 'Username'", is shown.
+* The link "Back to tasks", is shown.
+* Error message: "Please set a valid date for the task." is shown.
+* A form for creating task is shown
+
+##Test case 3.3: Failed to create task with too long task description 
+The user is loged in and is viewing the form for creating tasks.
+
+###Input:
+* Task description is having more than 500 characters
+* Press "Create" button
+
+###Output:
+* The text "Loged in as 'Username'", is shown.
+* The link "Back to tasks", is shown.
+* Error message: "Task description is too long. Currently:N of chars" is shown.
+* A form for creating task is shown
+
+##Test case 3.4: Successful task creation
+The user is loged in and is viewing the form for creating tasks.
+
+###Input:
+* Task description is having less than 500 characters, it is not empty and the date and time are valid
+* Press "Create" button
+
+###Output:
+* The text "Loged in as 'Username'", is shown.
+* The link "Create new task", is shown.
+* Message: "Task successfully created." is shown.
+* A list of tasks is shown.
+* The new task is shown at the bottom.
