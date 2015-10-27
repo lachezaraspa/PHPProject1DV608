@@ -248,3 +248,17 @@ Bellow each task there is "Delete" button;
 * Message: "Task deleted!" is shown.
 * A list of tasks is shown.
 
+
+##Test case 6.1: Logout
+The user is loged in and is viewing the list of tasks.
+At the bottom of the page there is "Logout" button
+
+###Input:
+* Press "Logout" button.
+
+###Output:
+* The link "Register a new user", is shown.
+* The text "Not logged in", is shown.
+* Message: “Bye Bye” is shown
+* A form for login is shown
+
