@@ -179,7 +179,7 @@ The user is loged in and is viewing the form for creating tasks.
 * The new task is shown at the bottom.
 
 ##Test case 4.1: Failed to edit task without having task description
-The user is loged in and is viewing the form for creating tasks. 
+The user is loged in and is viewing the form for editing tasks. 
 The old description of the task is in the text box, and the old date and time are filled in as well.
 
 ###Input:
@@ -193,7 +193,7 @@ The old description of the task is in the text box, and the old date and time ar
 * A form for creating task is shown
 
 ##Test case 4.2: Failed to edit task without giving valid date
-The user is loged in and is viewing the form for creating tasks.
+The user is loged in and is viewing the form for editing tasks.
 The old description of the task is in the text box, and the old date and time are filled in as well.
 
 ###Input:
@@ -207,7 +207,7 @@ The old description of the task is in the text box, and the old date and time ar
 * A form for creating task is shown
 
 ##Test case 4.3: Failed to edit task with too long task description 
-The user is loged in and is viewing the form for creating tasks.
+The user is loged in and is viewing the form for editing tasks.
 The old description of the task is in the text box, and the old date and time are filled in as well.
 
 ###Input:
@@ -221,7 +221,7 @@ The old description of the task is in the text box, and the old date and time ar
 * A form for creating task is shown
 
 ##Test case 4.4: Successfuly edited task
-The user is loged in and is viewing the form for creating tasks.
+The user is loged in and is viewing the form for editing tasks.
 The old description of the task is in the text box, and the old date and time are filled in as well.
 
 ###Input:
@@ -232,5 +232,19 @@ The old description of the task is in the text box, and the old date and time ar
 * The text "Loged in as 'Username'", is shown.
 * The link "Create new task", is shown.
 * Message: "Task successfully edited." is shown.
+* A list of tasks is shown.
+
+
+##Test case 5.1: Successfuly delete task
+The user is loged in and is viewing the list of tasks.
+Bellow each task there is "Delete" button;
+
+###Input:
+* Press "Delete" button bellow a task
+
+###Output:
+* The text "Loged in as 'Username'", is shown.
+* The link "Create new task", is shown.
+* Message: "Task deleted!" is shown.
 * A list of tasks is shown.
 
